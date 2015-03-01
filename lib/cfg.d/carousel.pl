@@ -18,7 +18,7 @@ sub run_carousel
 		]
 	)->ids;
 
-	my $carousel = $state->{repository}->xml->create_document_fragment;
+	my $carousel = $repo->xml->create_document_fragment;
 
 	for( 1 .. $n->[0] )
 	{
@@ -34,6 +34,21 @@ sub run_carousel
 
 sub run_carousel_image
 {
+	my( $self, $state, $eprint ) = @_;
+
+	if( ! $eprint->[0]->isa( "EPrints::DataObj::EPrint") )
+	{
+		$self->runtime_error( "carousel_image() must be called on an eprint object." );
+	}
+	my $repo = $state->{repository};
+
+	my @docs = $eprint->[0]->get_all_documents;
+	for( @docs )
+	{
+		return [ $_ ] if $_->is_set( "content" ) && $_->value( "content" ) eq "coverimage";
+	}
+
+	return [ undef ];
 }
 
 }
