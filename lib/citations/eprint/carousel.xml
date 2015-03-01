@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:cite="http://eprints.org/ep3/citation" xmlns:epc="http://eprints.org/ep3/control">
+    <div class="carousel-slide">
+      <div class="carousel-slide-image">
+      </div>
+      <div class="carousel-slide-meta">
+        <h2 class="title"><cite:linkhere><epc:print expr="title"/></cite:linkhere></h2>
+        <epc:if test="is_set(date)">
+          <div class="carousel-slide-meta-date">
+            <epc:print expr="date"/>
+          </div>
+        </epc:if>
+        <epc:if test="is_set(creators_name)">
+          <div class="carousel-slide-meta-authors">
+            <epc:print expr="creators_name"/>
+          </div>
+        </epc:if>
+        <epc:if test="is_set(abstract)">
+          <div class="carousel-slide-meta-summary">
+            <epc:print expr="abstract"/>
+          </div>
+        </epc:if>
+      </div>
+    </div>
+</cite:citation>
+
+
+        
+  
+                                           
+  

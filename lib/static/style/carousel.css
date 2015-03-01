@@ -1,0 +1,17 @@
+div.carousel
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+div.carousel button.slick-prev:before, div.carousel button.slick-next:before
+{
+	color: #000;
+}
+
+div.carousel ul.slick-dots
+{
+	bottom: auto;
+}
