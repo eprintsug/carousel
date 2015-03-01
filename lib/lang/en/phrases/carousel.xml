@@ -36,4 +36,8 @@
 
 </epp:phrase>
 
+<epp:phrase id="eprint_fieldname_carousel_featured">Featured in Carousel?</epp:phrase>
+<epp:phrase id="eprint_fieldhelp_carousel_featured">Select 'Yes' to include this record in the front page carousel.</epp:phrase>
+<epp:phrase id="eprint_radio_carousel_featured"><label><epc:pin name="true"/>Yes</label><br/><label><epc:pin name="false"/>No</label></epp:phrase>
+
 </epp:phrases>

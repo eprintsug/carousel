@@ -1,6 +1,4 @@
 
-$c->{carousel_items} = [ 180, 181, 182, 183, 184, 185 ];
-
 {
 
 package EPrints::Script::Compiled;
@@ -11,13 +9,20 @@ sub run_carousel
 
 	my $repo = $state->{repository};
 
-	my @ids = @{ $state->{repository}->config( "carousel_items" ) };
+	my $ids = $repo->dataset( "archive" )->search(
+		filters => [
+			{
+				meta_fields => [qw( carousel_featured )],
+				value => "TRUE",
+			}
+		]
+	)->ids;
 
 	my $carousel = $state->{repository}->xml->create_document_fragment;
 
 	for( 1 .. $n->[0] )
 	{
-		my $id = splice @ids, rand @ids, 1;
+		my $id = splice @$ids, rand @$ids, 1;
 		my $eprint = $repo->dataset( "archive" )->dataobj( $id );
 		next unless defined $eprint;
 
@@ -25,6 +30,10 @@ sub run_carousel
 	}
 
 	return [ $carousel, "XHTML" ];
+}
+
+sub run_carousel_image
+{
 }
 
 }

@@ -1,40 +1,49 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://repository.winchester.ac.uk/id/epm/carousel'>
+<epm id='http://winch.localhost/id/epm/carousel' xmlns='http://eprints.org/ep2/data/2.0'>
   <epmid>carousel</epmid>
+  <uri>http://winch.localhost/id/epm/carousel</uri>
   <documents>
     <document>
       <files>
         <file>
           <datasetid>document</datasetid>
           <filename>epm/carousel/cfg/cfg.d/zz_carousel.pl</filename>
-          <mime_type>inode/x-empty</mime_type>
-          <hash>d41d8cd98f00b204e9800998ecf8427e</hash>
+          <mime_type>text/plain</mime_type>
+          <hash>d43794fb4e9f58e7b9d05d9d6b7cf4c8</hash>
           <hash_type>MD5</hash_type>
-          <filesize>0</filesize>
+          <filesize>112</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>citations/eprint/carousel.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>a26dd8a7b89fb621027e3c15aa5bbcb1</hash>
+          <hash>3d58d6e8d2143293e6753d2f70b3e7b5</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1159</filesize>
+          <filesize>988</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/carousel.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>29b7607cae20118eb6cb9a7fd041b0e0</hash>
+          <hash>88724b8e47b1a1b9d322ff4b19b5f1e1</hash>
           <hash_type>MD5</hash_type>
-          <filesize>833</filesize>
+          <filesize>1502</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>cfg.d/carousel.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>2df66c3c928cc8b4c46afa97ae7fa15e</hash>
+          <hash>f81be21d3349a009f081669efd0e4288</hash>
           <hash_type>MD5</hash_type>
-          <filesize>622</filesize>
+          <filesize>646</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/style/carousel.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>47fe64b2e18efd9104d8497b2e0ad0f4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>236</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -46,11 +55,19 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/COMMIT_EDITMSG</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>0930c0906cc352c773c796ab9b47c82d</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>13</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/carousel/.git/index</filename>
           <mime_type>application/octet-stream</mime_type>
-          <hash>bec92d56fdb88e9ba767c66e51040bd0</hash>
+          <hash>e88b33b8b529876dfd0ab6177e5d9da4</hash>
           <hash_type>MD5</hash_type>
-          <filesize>176</filesize>
+          <filesize>1083</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -86,6 +103,22 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/e4/369dced773e5421e77deb44435332f72ccb32c</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>567405ba5252b8c41ed3496b103239e5</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>181</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/e4/28199cc9f059d66a2d455c40d1d0791fd695a2</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>d9949501832f8651a57a72ce48c35a9d</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>56</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/carousel/.git/objects/pack/pack-f935d828f2f3ed6291933bd435ba0f13ceda8680.pack</filename>
           <mime_type>application/octet-stream</mime_type>
           <hash>8fdf30a0f51c75c3f18a8235ea45cc8b</hash>
@@ -102,6 +135,174 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>c70c34cbeefd40e7c0149b7a0c2c64c2</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>15</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/fe/ecabff1afd9762d1526856b490317d27257e3f</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>12a223c07b2ba9c1c90e794795c86351</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>57</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/fa/4288581941f06c950eeea5a1b6d878a458491d</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>013a04e9e0654a75380227eeafc1a264</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>181</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/7a/28fc54f90fba554e3550eb42076442d01c559c</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>4996ccb0e6f0258c6cc752988d9d5f68</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>56</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/c3/8c6640351694379ddb9c30319d459cdb5125c2</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>5fa5117e8349f8abec09bf9b844b2f21</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>147</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/77/18beffc40004e1f60042229353378289815b33</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>4cd98156b7c18214bd6c63338059f94b</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>59</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/7d/d6dc13c419c32269bb25d370c873b32953f569</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>114e2732cb3899b72f0bc20a366f478e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1680</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/a8/8f8d344d412774878400a58a08e1aee53173b7</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>1a4d567f797c4a50f36c6083858d1f44</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>326</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/eb/18e0b6f7eaa87150ba24f382c296c6fe2faf01</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>00d223b414f8ba97ab1cc1ef83929b85</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>48</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/8e/1370d027968dc294947fdc0006a61fdf51a510</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>1dabac3b6fa28b97379e241ddce0a448</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>173</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/51/c46ecf976b8bf503ff3da0670033d699155378</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>df929f6543ec45614eabe471a75b21ae</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>47</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/f4/e6f5b87639c79b6092ecc1aab77db90ef69eb0</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>0657c08b92f46f31fadaae6c5c24434e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>137</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/f4/cb91572fa253af362916ca16364c107ec3540e</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>cdfb310e03591ffc74601ea890d3e284</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>369</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/06/2852b8b33c55f80cf12b8616aa926eb039f7de</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>12b2bf536b545c3b6aa61f85241fd0e5</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>49</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/19/71638f94962343ace85b3ce74e5edacef9c17b</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>a4754f8997cdf424bcfd7ac23f71e172</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>56</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/63/ba27d1ba32dead30d515b7583cea5b420eb2bb</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>f6df0df1c6e10afbcf729db63e30b821</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>169</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/c7/b24c78127a688fd0867d501864f51f6bd022b4</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>a080886423cbfb988f986371b677fc17</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>558</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/53/8d5e5aa99b7f4288e632ac6f7ce8576d12939c</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>6802b0ecca9f763bd8a0010604280eb9</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>44</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/4f/b715d23a2ca4e0de5b89c22d15a9b800ffeafd</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>edfc64fb120afb7d8e6fc66eb79085bc</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>47</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/objects/f1/588d17d141e32f8b35058111b6290918d1d8ea</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>6c5910f8067d2b4db848559045b56c6d</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>167</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/refs/remotes/origin/master</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>744f907dc93c24936d1c79732b22508d</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>41</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/carousel/.git/refs/remotes/origin/HEAD</filename>
           <mime_type>text/plain</mime_type>
           <hash>73a00957034783b7b5c8294c54cd3e12</hash>
@@ -112,7 +313,7 @@
           <datasetid>document</datasetid>
           <filename>epm/carousel/.git/refs/heads/master</filename>
           <mime_type>text/plain</mime_type>
-          <hash>2c02218e4e8b7a9ef3ef0c6db0e3fe51</hash>
+          <hash>744f907dc93c24936d1c79732b22508d</hash>
           <hash_type>MD5</hash_type>
           <filesize>41</filesize>
         </file>
@@ -120,9 +321,17 @@
           <datasetid>document</datasetid>
           <filename>epm/carousel/.git/logs/HEAD</filename>
           <mime_type>text/plain</mime_type>
-          <hash>4cb256058f973e3e04def675f40d1138</hash>
+          <hash>f36619a624d25741d205df056a3684fc</hash>
           <hash_type>MD5</hash_type>
-          <filesize>188</filesize>
+          <filesize>516</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/carousel/.git/logs/refs/remotes/origin/master</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>2b74d7e9358844b8406831881e6a3e29</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>157</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -136,9 +345,9 @@
           <datasetid>document</datasetid>
           <filename>epm/carousel/.git/logs/refs/heads/master</filename>
           <mime_type>text/plain</mime_type>
-          <hash>4cb256058f973e3e04def675f40d1138</hash>
+          <hash>f36619a624d25741d205df056a3684fc</hash>
           <hash_type>MD5</hash_type>
-          <filesize>188</filesize>
+          <filesize>516</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -219,7 +428,7 @@
       <content>install</content>
     </document>
   </documents>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <creators>
     <item>
       <name>
@@ -229,7 +438,7 @@
       <id>you@email.address</id>
     </item>
   </creators>
-  <datestamp>2015-03-01 10:17:25</datestamp>
+  <datestamp>2015-03-01 12:36:13</datestamp>
   <title>Carousel</title>
   <description>This is the description.</description>
   <requirements>The following modules are required: X, Y, Z</requirements>
