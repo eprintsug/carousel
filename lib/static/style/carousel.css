@@ -1,17 +1,53 @@
+/* main carousel container */
 div.carousel
 {
-	width: 90%;
+	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
 }
 
+/* carousel controls */
 div.carousel button.slick-prev:before, div.carousel button.slick-next:before
 {
 	color: #000;
 }
-
 div.carousel ul.slick-dots
 {
 	bottom: auto;
+}
+
+/* carousel slides */
+div.carousel-slide-image
+{
+	float: left;
+	width: 200px;
+}
+div.carousel-slide-image-placeholder
+{
+	font-size: 3em;
+	color: #ccc;
+	text-align: center;
+	transform: rotate(-10deg);
+}
+div.carousel-slide-meta
+{
+	float: right;
+	width: 380px;
+	line-height: 1.3em;
+}
+div.carousel-slide-meta-title
+{
+	font-size: 1.3em;
+}
+div.carousel-slide-meta-authors
+{
+	font-size: 0.85em;
+	font-weight: bold;
+}
+div.carousel-slide-meta-abstract
+{
+	font-size: 0.9em;
+	line-height: 1.4em;
+	margin: 0.7em 0.3em 0 0;
 }

@@ -1,27 +1,62 @@
 <?xml version="1.0" ?>
-
+<!DOCTYPE html SYSTEM "entities.dtd">
 <cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:cite="http://eprints.org/ep3/citation" xmlns:epc="http://eprints.org/ep3/control">
   <div class="carousel-slide">
-    <epc:if test="$item.carousel_image().is_set()">
-      <div class="carousel-slide-image">
-        <img src="{$item.carousel_image().thumbnail_url('medium')}"/>
-      </div>
-    </epc:if>
+    <div class="carousel-slide-image">
+      <epc:choose>
+        <epc:when test="$item.carousel_image().is_set()">
+          <img src="{$item.carousel_image().thumbnail_url('medium')}"/>
+        </epc:when>
+        <epc:otherwise>
+          <div class="carousel-slide-image-placeholder">Featured<br/>&nbsp;Featured<br/>&nbsp;&nbsp;Featured</div>
+        </epc:otherwise>
+      </epc:choose>
+    </div>
     <div class="carousel-slide-meta">
-      <div class="carousel-slide-meta-title"><cite:linkhere><epc:print expr="title"/></cite:linkhere></div>
+      <div class="carousel-slide-meta-title">
+        <cite:linkhere>
+          <epc:choose>
+            <epc:when test="strlen(title) gt 90">
+              <epc:print expr="substr(title,0,80)"/>...
+            </epc:when>
+            <epc:otherwise>
+              <epc:print expr="title"/>
+            </epc:otherwise>
+          </epc:choose>
+        </cite:linkhere>
+      </div>
       <epc:if test="is_set(date)">
         <div class="carousel-slide-meta-date">
-          <epc:print expr="date"/>
+          <epc:print expr="substr(date.as_string(),0,4)"/>
         </div>
       </epc:if>
       <epc:if test="is_set(creators_name)">
         <div class="carousel-slide-meta-authors">
-          <epc:print expr="creators_name"/>
+          <epc:choose>
+            <epc:when test="length(creators_name) gt 7">
+              <epc:set name="creators" expr="creators_name" limit="5">
+                <epc:foreach expr="$creators" iterator="creator">
+                  <epc:print expr="$creator"/><epc:phrase ref="lib/metafield:join_name"/>
+                </epc:foreach>
+                ...
+              </epc:set>
+            </epc:when>
+            <epc:otherwise>
+              <epc:print expr="creators_name"/>
+            </epc:otherwise>
+          </epc:choose>
         </div>
       </epc:if>
       <epc:if test="is_set(abstract)">
-        <div class="carousel-slide-meta-summary">
-          <epc:print expr="abstract"/>
+        <div class="carousel-slide-meta-abstract">
+          <epc:choose>
+            <epc:when test="strlen(abstract) gt 320">
+              <epc:print expr="substr(abstract,0,300)"/>...
+            </epc:when>
+            <epc:otherwise>
+              <epc:print expr="abstract"/>
+            </epc:otherwise>
+          </epc:choose>
         </div>
       </epc:if>
     </div>
