@@ -17,33 +17,33 @@
           <datasetid>document</datasetid>
           <filename>citations/eprint/carousel.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>805f8bb184fce1b416a0f7671ca0b2b4</hash>
+          <hash>2bb4488d56502ef33481ed18d6092b9a</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2393</filesize>
+          <filesize>2408</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/carousel.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>03052c601ff4982ab7293a9a0a8cf60a</hash>
+          <hash>e9acaa5628d73c1c24381f6a449cc9ec</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1651</filesize>
+          <filesize>3119</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>cfg.d/carousel.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>bee2e6881bb82b06a718f3f5d7e4acb5</hash>
+          <hash>c4b6b93c4e2e2235e3bb7bec25cb737e</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1020</filesize>
+          <filesize>1069</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>static/style/carousel.css</filename>
           <mime_type>text/plain</mime_type>
-          <hash>ae7169cd0f05c353b557c26ecbf5cb33</hash>
+          <hash>c9e57a44076bdfd106bfb5e3e3681974</hash>
           <hash_type>MD5</hash_type>
-          <filesize>804</filesize>
+          <filesize>1072</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
@@ -52,7 +52,7 @@
       <content>install</content>
     </document>
   </documents>
-  <version>1.0.3</version>
+  <version>1.0.4-bootstrap</version>
   <creators>
     <item>
       <name>
@@ -62,8 +62,8 @@
       <id>timothy.miles-board@london.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2015-03-23 14:02:37</datestamp>
+  <datestamp>2015-04-23 00:23:55</datestamp>
   <title>Carousel</title>
-  <description>Front page carousel for EPrints based on http://kenwheeler.github.io/slick/</description>
+  <description>Front page carousel for EPrints based on bootstrap carousel http://getbootstrap.com/examples/carousel/</description>
   <home_page>http://github.com/eprintsug/carousel</home_page>
 </epm>
