@@ -1,4 +1,4 @@
-# Front page carousel for EPrints based on http://kenwheeler.github.io/slick/
+# Front page carousel for EPrints based on Bootstrap Carousel http://getbootstrap.com/examples/carousel/
 
 ## Getting started
 
@@ -32,6 +32,5 @@ If you want the carousel content to change regularly, schedule this command to r
 
 ## Tips
 
-* Carousel uses jquery and slick - if you are already loading one of both of these just override the carousel-js phrase
-* The slick library has many additional settings - see http://kenwheeler.github.io/slick/#settings - if you want to adjust the defaults just override the carousel-init phrase
+* Carousel uses jquery and bootstrap - if you are already loading one of both of these just override the carousel-js phrase
 * By default 5 randomly selected "featured" records are shown in the carousel - to show more (or less) override the carousel phrase and change the "<epc:print expr="carousel(5)"/>" line
