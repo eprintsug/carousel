@@ -26,7 +26,7 @@ sub run_carousel
 		my $eprint = $repo->dataset( "archive" )->dataobj( $id );
 		next unless defined $eprint;
 
-		$carousel->appendChild( $eprint->render_citation_link( "carousel" ) );
+		$carousel->appendChild( $eprint->render_citation_link( "carousel", active => [ $_ == 1 ? "active" : "", "STRING" ] ) );
 	}
 
 	return [ $carousel, "XHTML" ];

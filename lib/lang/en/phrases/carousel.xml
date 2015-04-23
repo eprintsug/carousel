@@ -8,29 +8,60 @@
   <script type="text/javascript">
     jQuery.noConflict();
   </script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="{$config{rel_path}}/style/carousel.css"/>
 </epp:phrase>
 
 <epp:phrase id="carousel-init">
+  <!-- https://coderwall.com/p/uf2pka/normalize-twitter-bootstrap-carousel-slide-heights -->
   <script type="text/javascript">
+    function carouselNormalization() {
+        var items = jQuery('#fpcarousel .carousel-inner .item'), //grab all slides
+            heights = [], //create empty array to store height values
+            tallest; //create variable to make note of the tallest slide
+
+        if (items.length) {
+            function normalizeHeights() {
+                items.each(function() { //add heights to array
+                    heights.push(jQuery(this).height()); 
+                });
+                tallest = Math.max.apply(null, heights); //cache largest value
+                items.each(function() {
+                    jQuery(this).css('min-height',tallest + 'px');
+                });
+            };
+            normalizeHeights();
+
+            jQuery(window).on('resize orientationchange', function () {
+                tallest = 0, heights.length = 0; //reset vars
+                items.each(function() {
+                    jQuery(this).css('min-height','0'); //reset min-height
+                }); 
+                normalizeHeights(); //run it again 
+            });
+        }
+    }
+
     jQuery(document).ready(function(){
-        jQuery('div.carousel').slick({
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 6000,
-            infinite: true,
-            pauseOnHover: true
-        });
-    }); 
+        carouselNormalization();
+    });
   </script>
 </epp:phrase>
 
 <epp:phrase id="carousel">
   <div style="clear:both"/>
-  <div class="carousel">
-    <epc:print expr="carousel(5)"/>
+  <div id="fpcarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#fpcarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#fpcarousel" data-slide-to="1"></li>
+      <li data-target="#fpcarousel" data-slide-to="2"></li>
+      <li data-target="#fpcarousel" data-slide-to="3"></li>
+      <li data-target="#fpcarousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <epc:print expr="carousel(5)"/>
+    </div>
   </div>
   <epc:phrase ref="carousel-js"/>
   <epc:phrase ref="carousel-init"/>
