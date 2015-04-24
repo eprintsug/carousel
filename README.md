@@ -56,6 +56,23 @@ mysql> update eprint set carousel_featured="TRUE" where eprintid in (select epri
 
 Otherwise (and for finer tuned control), add the carousel_featured field to your workflow and select records individually - for best results also attach a suitable cover image (minimum size 200x150) to the record.
 
+```
+$ vi archives/YOUR_ARCHIVE/cfg/workflows/eprint/default.xml
+```
+and add, in the document section,
+
+```
+<stage name="files">
+        <component type="Upload" show_help="always" />
+        <component type="Documents">
+        ...
+        ...
+        ...
+        <field ref="carousel_featured" />
+        ...
+        ...
+```
+
 ## Tips
 
 * Carousel uses jquery and bootstrap - if you are already loading one of both of these just override the carousel-js phrase
