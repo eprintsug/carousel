@@ -30,7 +30,7 @@
 <epp:phrase id="carousel">
   <div style="clear:both"/>
   <div class="carousel">
-    <epc:print expr="carousel(5)"/>
+    <epc:print expr="carousel()"/>
   </div>
   <epc:phrase ref="carousel-js"/>
   <epc:phrase ref="carousel-init"/>

@@ -10,15 +10,11 @@ To add a carousel to your front page add the following to archives/foo/cfg/lang/
 
 ### Choosing what to display
 
-The carousel displays a random selection of your "featured" records - that is, records where the carousel_featured field is set to TRUE. If the record has a cover image attached (ie. uploaded image with content field set to "Cover Image") that will also be displayed.
+By default, the carousel displays a small (random) selection of your most recently deposited records.
 
-If you already have some records which meet this criteria you could do something like this to get up and running quickly:
+You can override the defaults so that the carousel displays, for example, a random selection of your "featured" records (that is, records where the carousel_featured field is set to TRUE) or even a random selection from your entire repository. See lib/cfg,d/carousel.pl for examples.
 
-```
-mysql> update eprint set carousel_featured="TRUE" where eprintid in (select eprintid from document where content="coverimage");
-```
-
-Otherwise (and for finer tuned control), add the carousel_featured field to your workflow and select records individually - for best results also attach a suitable cover image (minimum size 200x150) to the record.
+If the record has a cover image attached (ie. uploaded image with content field set to "Cover Image") that will also be displayed.
 
 ### Keeping things fresh
 
@@ -34,4 +30,3 @@ If you want the carousel content to change regularly, schedule this command to r
 
 * Carousel uses jquery and slick - if you are already loading one of both of these just override the carousel-js phrase
 * The slick library has many additional settings - see http://kenwheeler.github.io/slick/#settings - if you want to adjust the defaults just override the carousel-init phrase
-* By default 5 randomly selected "featured" records are shown in the carousel - to show more (or less) override the carousel phrase and change the "<epc:print expr="carousel(5)"/>" line
