@@ -26,7 +26,7 @@ In order to install from https://github.com/eprintsug/carousel/ you must have [g
     ```
     tools/epm enable YOUR_ARCHIVE carousel
     ```
-* customize your workflow [See next session](#configuration)
+* customize your workflow [See next session](#choosing-what-to-display)
 * add the new fields to your repository
 
     ```
@@ -56,17 +56,13 @@ mysql> update eprint set carousel_featured="TRUE" where eprintid in (select epri
 
 Otherwise (and for finer tuned control), add the carousel_featured field to your workflow and select records individually - for best results also attach a suitable cover image (minimum size 200x150) to the record.
 
-### Keeping things fresh
-
-To update the carousel content run:
-
-````
-bin/generate_static foo
-````
-
-If you want the carousel content to change regularly, schedule this command to run as often as desired using cron.
-
 ## Tips
 
 * Carousel uses jquery and bootstrap - if you are already loading one of both of these just override the carousel-js phrase
+* To update the carousel content run:
+
+    ```
+    bin/generate_static foo
+    ```
+    If you want the carousel content to change regularly, schedule this command to run as often as desired using cron.
 * By default 5 randomly selected "featured" records are shown in the carousel - to show more (or less) override the carousel phrase and change the "<epc:print expr="carousel(5)"/>" line
