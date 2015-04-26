@@ -7,6 +7,14 @@ $c->{carousel}->{defaults} = {
 };
 
 # choose 6 random items from the set of all 'featured' items
+# (add a field called 'carousel_featured' or similar to your workflow and tick featured items)
+#$c->add_dataset_field( "eprint",
+#       {
+#               name => "carousel_featured",
+#               type => "boolean",
+#               volatile => 1,
+#       }
+#);
 #$c->{carousel}->{defaults} = {
 #	search => '1|1||archive|-||-|carousel_featured:carousel_featured:ALL:EQ:TRUE|eprint_status:eprint_status:ANY:EQ:archive',
 #	limit => undef,

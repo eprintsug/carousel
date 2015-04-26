@@ -8,15 +8,15 @@ To add a carousel to your front page add the following to archives/foo/cfg/lang/
 <epc:phrase ref="carousel"/>
 ````
 
-### Choosing what to display
+## Choosing what to display
 
 By default, the carousel displays a small (random) selection of your most recently deposited records.
 
-You can override the defaults so that the carousel displays, for example, a random selection of your "featured" records (that is, records where the carousel_featured field is set to TRUE) or even a random selection from your entire repository. See lib/cfg,d/carousel.pl for examples.
+You can override the defaults so that the carousel displays, for example, a random selection of your "featured" records (for some definition of "featured") or even a random selection from your entire repository. See lib/cfg,d/carousel.pl for examples.
 
-If the record has a cover image attached (ie. uploaded image with content field set to "Cover Image") that will also be displayed.
+The carousel will attempt to display an image alongside each record by looking for (in order of preference): a cover image (ie. attached image with content field set to "Cover Image"); some other attached image or video file; some other attached file with a thumbnail preview.
 
-### Keeping things fresh
+## Keeping things fresh
 
 To update the carousel content run:
 
