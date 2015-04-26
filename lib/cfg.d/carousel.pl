@@ -70,13 +70,25 @@ sub run_carousel_image
 	}
 	my $repo = $state->{repository};
 
-	my @docs = $eprint->[0]->get_all_documents;
+	# documents with thumbnails
+	my @docs = grep { defined $_->thumbnail_url( "medium" ) } $eprint->[0]->get_all_documents;
+
+	return [ undef ] unless scalar @docs;
+
+	# look for a 'cover' image
 	for( @docs )
 	{
 		return [ $_ ] if $_->is_set( "content" ) && $_->value( "content" ) eq "coverimage";
 	}
 
-	return [ undef ];
+	# look for any other image
+	for( @docs )
+	{
+		return [ $_ ] if $_->is_set( "format" ) && $_->value( "format" ) =~ /^image/ || $_->value( "format" ) =~ /^video/;
+	}
+
+	# just return something with a thumbnail
+	return [ $docs[0] ];
 }
 
 }
