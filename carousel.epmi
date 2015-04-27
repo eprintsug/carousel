@@ -1,18 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://winch.localhost/id/epm/carousel'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://drtjmb.com/id/epm/carousel'>
   <epmid>carousel</epmid>
   <uri>http://winch.localhost/id/epm/carousel</uri>
   <documents>
     <document>
       <files>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>epm/carousel/cfg/cfg.d/zz_carousel.pl</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>d43794fb4e9f58e7b9d05d9d6b7cf4c8</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>112</filesize>
-        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>citations/eprint/carousel.xml</filename>
@@ -25,17 +17,17 @@
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/carousel.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>03052c601ff4982ab7293a9a0a8cf60a</hash>
+          <hash>0c3257f0df6aaef5b9a9428afd8656f0</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1651</filesize>
+          <filesize>1650</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>cfg.d/carousel.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>bee2e6881bb82b06a718f3f5d7e4acb5</hash>
+          <hash>f7557c0ca7bc177cf6d1c1828ed6b090</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1020</filesize>
+          <filesize>2634</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -52,7 +44,7 @@
       <content>install</content>
     </document>
   </documents>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <creators>
     <item>
       <name>
@@ -62,7 +54,7 @@
       <id>timothy.miles-board@london.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2015-03-23 14:02:37</datestamp>
+  <datestamp>2015-04-26 18:28:04</datestamp>
   <title>Carousel</title>
   <description>Front page carousel for EPrints based on http://kenwheeler.github.io/slick/</description>
   <home_page>http://github.com/eprintsug/carousel</home_page>
