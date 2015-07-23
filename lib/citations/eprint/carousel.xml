@@ -5,7 +5,7 @@
     <div class="carousel-slide-image">
       <epc:choose>
         <epc:when test="$item.carousel_image().is_set()">
-          <img src="{$item.carousel_image().thumbnail_url('medium')}"/>
+          <img src="{$item.carousel_image().thumbnail_url('carousel')}"/>
         </epc:when>
         <epc:otherwise>
           <div class="carousel-slide-image-placeholder">Featured<br/>&nbsp;Featured<br/>&nbsp;&nbsp;Featured</div>
