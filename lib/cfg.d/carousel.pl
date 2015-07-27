@@ -45,7 +45,7 @@ sub run_carousel_image
 	my @docs = $eprint->[0]->get_all_documents;
 	for( @docs )
 	{
-		return [ $_ ] if $_->is_set( "content" ) && $_->value( "content" ) eq "coverimage";
+		return [ $_ ] if $_->is_set( "content" ) && $_->value( "content" ) eq "carousel";
 	}
 
 	return [ undef ];
