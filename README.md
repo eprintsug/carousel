@@ -10,6 +10,8 @@ In order to install from https://github.com/eprintsug/carousel/ you must have [g
 
     ```
     git submodule add https://github.com/eprintsug/carousel.git lib/epm/carousel 
+    cd lib/epm/carousel 
+    git checkout origin/bootstrap
     ```
 * generate carousel.epmi
 
